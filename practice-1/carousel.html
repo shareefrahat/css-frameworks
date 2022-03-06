@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Bootstrap Carousel</title>
+    <style>
+        .carousel {
+            max-width: 800px;
+            overflow: hidden;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="m-4">
+        <div>
+            <h2>All Practised Links</h2>
+            <ul>
+                <li><a href="accordion.html">Accordion</a></li>
+                <li><a href="aleart.html">Alert</a></li>
+                <li><a href="badges.html">Badges</a></li>
+                <li><a href="cards.html">Cards</a></li>
+
+                <li><a href="carousel.html">Carousel</a></li>
+                <li><a href="img-thumb.html">Img-Thumbnail</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="components.html">Other Components</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Bootstrap Carousel</h1>
+    <section class="mx-4">
+        <div class="carousel slide" id="slide-show" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/perfume1.jpg" alt="" width="800px" height="300px">
+                    <div class="carousel-caption">
+                        <h1>Product-1</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/perfume2.jpg" alt="" width="800px" height="300px">
+                    <div class="carousel-caption">
+                        <h1>Product-2</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/perfume3.jpg" alt="" width="800px" height="300px">
+                    <div class="carousel-caption">
+                        <h1>Product-3</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#slide-show" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span></button>
+            <button type="button" class="carousel-control-next" data-bs-target="#slide-show" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span></button>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slide-show" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slide-show" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slide-show" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

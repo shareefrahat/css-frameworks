@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Bootstrap Table</title>
+</head>
+
+<body>
+    <nav class="m-4">
+        <div>
+            <h2>All Practised Links</h2>
+            <ul>
+                <li><a href="accordion.html">Accordion</a></li>
+                <li><a href="aleart.html">Alert</a></li>
+                <li><a href="badges.html">Badges</a></li>
+                <li><a href="cards.html">Cards</a></li>
+
+                <li><a href="carousel.html">Carousel</a></li>
+                <li><a href="img-thumb.html">Img-Thumbnail</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="components.html">Other Components</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Bootstrap Table</h1>
+
+    <div class="mx-3">
+        <table class="table table-striped table-hover table-bordered border-primary">
+            <thead class="table-primary table-bordered border-primary text-center">
+                <!-- you can use table-borderless -->
+                <tr>
+                    <th>Serial</th>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Apple</td>
+                    <td>E1234</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Ball</td>
+                    <td>F2323</td>
+                    <td>3.5</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Cat</td>
+                    <td>E4567</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Dolphin</td>
+                    <td>F9267</td>
+                    <td>2.5</td>
+                </tr>
+                <tr>
+                    <th class="table-active text-center" colspan="3">Average</th>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
